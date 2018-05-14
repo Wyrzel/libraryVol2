@@ -16,6 +16,9 @@ public abstract class Publication {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "title")
+    private String title;
+
     @ManyToMany
     @JoinTable(
             name = "publication_author",

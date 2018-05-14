@@ -14,6 +14,8 @@ public class Book extends Publication {
     @OneToMany(mappedBy = "book")
     private List<BookCopy> bookCopies;
 
+
+
     @Column(name = "category")
     private String category;
 

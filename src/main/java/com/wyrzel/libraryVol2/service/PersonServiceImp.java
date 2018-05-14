@@ -30,6 +30,10 @@ public class PersonServiceImp implements GenericService<Person> {
 
     @Override
     public void delete(Long id) {
+
+
         personRepository.deleteById(id);
     }
+
+
 }

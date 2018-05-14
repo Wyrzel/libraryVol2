@@ -14,4 +14,10 @@ public class MainController {
 
         return "index";
     }
+
+    @GetMapping(value = "/books")
+    public String allBooks(){
+
+        return "books";
+    }
 }
